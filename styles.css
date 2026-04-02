@@ -478,9 +478,7 @@ a {
 .profile-photo {
     display: block;
     object-fit: cover;
-    object-position: center top;
-    animation: none;
-    border-radius: 28%;
+    object-position: center;
 }
 
 @keyframes morph {
