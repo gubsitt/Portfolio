@@ -1177,11 +1177,14 @@ footer {
 /* Scroll Animation Classes */
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.75s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transform: translateY(26px) scale(0.985);
+    filter: blur(4px);
+    transition: opacity 0.68s ease, transform 0.68s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.68s ease;
+    will-change: opacity, transform, filter;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: blur(0);
 }
